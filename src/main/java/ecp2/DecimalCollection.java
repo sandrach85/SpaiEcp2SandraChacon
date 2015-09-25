@@ -33,7 +33,6 @@ public class DecimalCollection {
             if (item > higher) {
                 higher = item;
             }
-            
         }
         return higher;
     }
