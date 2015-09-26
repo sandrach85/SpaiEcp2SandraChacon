@@ -38,5 +38,9 @@ public class User {
     public String getFamilyName() {
         return this.familyName;
     }
+    
+    public String getFullNameInvert(){
+        return familyName+", "+name;
+    }
 
 }
