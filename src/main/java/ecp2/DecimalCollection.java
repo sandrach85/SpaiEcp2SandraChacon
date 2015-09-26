@@ -34,7 +34,7 @@ public class DecimalCollection {
                 higher = item;
             }
         }
-        return higher;  
+        return higher;
     }
 
 }

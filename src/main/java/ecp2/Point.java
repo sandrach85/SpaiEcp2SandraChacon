@@ -1,7 +1,7 @@
 package ecp2;
 
 public class Point {
-    
+
     private int x, y;
 
     public Point(int x, int y) {
@@ -29,7 +29,7 @@ public class Point {
         this.x -= origin.getX();
         this.y -= origin.getY();
     }
-    
+
     public int getX() {
         return this.x;
     }
@@ -42,5 +42,10 @@ public class Point {
     public String toString() {
         return "Point[" + x + "," + y + "]";
     }
-    
+
+    public void cambiarCoordenada(int newX, int newY) {
+        this.x = newX;
+        this.y = newY;
+    }
+
 }

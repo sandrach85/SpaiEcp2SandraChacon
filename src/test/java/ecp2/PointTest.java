@@ -65,5 +65,12 @@ public class PointTest {
     public void testToString() {
         assertEquals("Point["+pt.getX()+","+pt.getY()+"]","Point[2,3]");
     }
+    
+    @Test
+    public void testCambiarCoordenada(){
+        pt.cambiarCoordenada(4,5);
+        assertEquals(pt.getX(), 4);
+        assertEquals(pt.getY(), 5);
+    }
 
 }
