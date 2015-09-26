@@ -43,4 +43,9 @@ public class Point {
         return "Point[" + x + "," + y + "]";
     }
     
+    public void cambiarCoordenada(int newX, int newY){
+        this.x = newX;
+        this.y = newY;
+    }
+    
 }
