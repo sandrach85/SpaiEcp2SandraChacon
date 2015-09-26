@@ -61,4 +61,15 @@ public class Fraction {
         return denominator;
     }
     
+    public Fraction menor(Fraction frac1, Fraction frac2){
+        double div1 = frac1.getNumerator()/frac2.getDenominator();
+        double div2 = frac2.getNumerator()/frac2.getDenominator();
+        if(div1 < div2){
+            return frac1;
+        }
+        else{
+            return frac2;
+        }
+    }
+    
 }
