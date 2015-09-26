@@ -10,8 +10,7 @@ import org.junit.Test;
 public class DecimalCollectionTest {
     
     private DecimalCollection collec;
-   
-    
+     
     @Before
     public void before() {
         collec = new DecimalCollection();       
