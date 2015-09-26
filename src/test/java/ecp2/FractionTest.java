@@ -43,8 +43,8 @@ public class FractionTest {
     
     @Test
     public void testMenor(){
-        Fraction f2 = new Fraction(1,2);
-        
+        Fraction f2 = new Fraction(1,3);
+        assertEquals(fra.menor(f2), f2 );
     }
 
 }

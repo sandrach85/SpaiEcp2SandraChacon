@@ -65,10 +65,10 @@ public class Fraction {
         double div1 = frac1.getNumerator()/frac1.getDenominator();
         double div2 = this.getNumerator()/this.getDenominator();
         if(div1 < div2){
-            return frac1;
+            return this;
         }
         else{
-            return this;
+            return frac1;
         }
     }
     
