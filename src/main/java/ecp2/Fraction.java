@@ -72,4 +72,15 @@ public class Fraction {
         }
     }
     
+    public boolean equivalentes(Fraction f){
+    	int m = this.getNumerator() * f.getDenominator();
+    	int e = this.getDenominator() * f.getNumerator();
+    	if(m==e){
+    	  return true;
+    	}else{
+    	 return false;
+    }
+    
+    }
+
 }

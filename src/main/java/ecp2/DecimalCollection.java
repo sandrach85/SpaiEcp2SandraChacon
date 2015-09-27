@@ -36,5 +36,14 @@ public class DecimalCollection {
         }
         return higher;
     }
+    
+    public double multiplicar(){
+        double respuesta = 1;
+        for(double item: this.collection){
+            respuesta = respuesta*item;
+        }
+        return respuesta;
+    }
 
+    
 }

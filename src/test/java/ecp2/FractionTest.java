@@ -1,12 +1,15 @@
 package ecp2;
 
 import static org.junit.Assert.*;
+import ecp2.Fraction;
 
 import org.junit.Before;
 import org.junit.Test;
 
 public class FractionTest {
     private Fraction fra;
+    
+    private Fraction fraction;
 
     @Before
     public void before() {
@@ -46,5 +49,14 @@ public class FractionTest {
         Fraction f2 = new Fraction(1,3);
         assertEquals(fra.menor(f2), f2 );
     }
+    
+    @Test 
+    public void testEquivalentes(){
+        Fraction f = new Fraction(2,3);
+        assertTrue(!fraction.equivalentes(f));
+        Fraction f1 = new Fraction(12,6);
+        assertTrue(fraction.equivalentes(f1));
+    }
+    
 
 }

@@ -1,20 +1,19 @@
 package ecp2;
 
 import static org.junit.Assert.*;
-
 import java.util.List;
-
 import org.junit.Before;
 import org.junit.Test;
-
+import ecp2.DecimalCollection;
 public class DecimalCollectionTest {
     
     private DecimalCollection collec;
    
-    
+    private DecimalCollection dc;
     @Before
     public void before() {
-        collec = new DecimalCollection();       
+        collec = new DecimalCollection();  
+        dc = new DecimalCollection();
     }
 
     @Test
@@ -38,5 +37,13 @@ public class DecimalCollectionTest {
         collec.add(0.5);
         assertTrue(collec.higher()==0.6);
     }
-
+    
+    @Test
+    public void testMultiplicar(){
+        dc.add(1);
+        dc.add(2);
+        dc.add(3);
+        assertTrue(dc.multiplicar()==6);
+    }
+    
 }
