@@ -39,4 +39,11 @@ public class DecimalCollectionTest {
         assertTrue(collec.higher()==0.6);
     }
 
+    @Test
+    public void testMenor(){
+    	collec = new DecimalCollection();
+    	collec.add(-3);
+    	collec.add(5);
+    	assertTrue(collec.menor() == -3);
+    }
 }
