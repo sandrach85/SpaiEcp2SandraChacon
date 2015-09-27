@@ -52,5 +52,10 @@ public class UserTest {
     public void testGetFullNameInvert() {
         assertEquals(us.getFullNameInvert(), "Chacon, Sandra");
     }
+    
+    @Test
+    public void testNombreMayusculas(){
+    	assertEquals("SANDRA CHACON", us.nombreMayusculas());
+    }
 
 }
