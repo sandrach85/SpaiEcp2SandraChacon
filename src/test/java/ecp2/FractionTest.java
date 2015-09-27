@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+
 public class FractionTest {
     private Fraction fra;
 
@@ -47,4 +48,10 @@ public class FractionTest {
         assertEquals(fra.menor(f2), f2 );
     }
 
+    @Test
+    public void testSuma() {
+    	Fraction f3 = this.fra.sumar(new Fraction(2,5));
+    	assertEquals(9, f3.getNumerator());
+    	assertEquals(10, f3.getDenominator());
+    }
 }

@@ -1,5 +1,6 @@
 package ecp2;
 
+
 /**
  * Conceptos: Las fracciones propias son aquellas cuyo numerador es menor que el
  * denominador
@@ -70,6 +71,14 @@ public class Fraction {
         else{
             return frac1;
         }
+    }
+    
+    public Fraction sumar(Fraction fr) {
+    	return new Fraction(
+    		((this.getNumerator()*fr.getDenominator())+(fr.getNumerator()*this.getDenominator())), 
+    		 (this.getDenominator()*fr.getDenominator()
+    		)
+    		);
     }
     
 }
