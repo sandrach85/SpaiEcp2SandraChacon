@@ -14,6 +14,7 @@ public class FractionTest {
     @Before
     public void before() {
         fra = new Fraction(1, 2);
+        this.fraction = new Fraction(6,3);
     }
 
     @Test
