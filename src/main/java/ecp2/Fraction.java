@@ -72,4 +72,11 @@ public class Fraction {
         }
     }
     
+    public Fraction sumar(Fraction fr) {
+       	return new Fraction(
+       		((this.getNumerator()*fr.getDenominator())+(fr.getNumerator()*this.getDenominator())), 
+    	   		 (this.getDenominator()*fr.getDenominator()
+    	     )
+    	   		            );
+    }
 }
