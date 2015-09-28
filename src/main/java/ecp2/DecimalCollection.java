@@ -8,7 +8,7 @@ public class DecimalCollection {
     private List<Double> collection;
 
     public DecimalCollection() {
-        this.collection = new ArrayList<Double>(); 
+        this.collection = new ArrayList<Double>();
     }
 
     public void add(double value) {
@@ -36,14 +36,24 @@ public class DecimalCollection {
         }
         return higher;
     }
-    
-    public double multiplicar(){
+
+    public double multiplicar() {
         double respuesta = 1;
-        for(double item: this.collection){
-            respuesta = respuesta*item;
+        for (double item : this.collection) {
+            respuesta = respuesta * item;
         }
         return respuesta;
     }
 
-    
+    public double menor() {
+        double menor = Double.POSITIVE_INFINITY;
+        for (double item : this.collection) {
+            if (item < menor) {
+                menor = item;
+            }
+        }
+        return menor;
+
+    }
+
 }

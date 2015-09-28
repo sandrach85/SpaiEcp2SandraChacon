@@ -73,4 +73,10 @@ public class PointTest {
         assertEquals(pt.getY(), 5);
     }
 
+    @Test
+    public void testLimitar(){
+    	pt = new Point(-15,150);
+    	assertEquals(-10,pt.getX());
+    	assertEquals(100,pt.getY());
+    }
 }

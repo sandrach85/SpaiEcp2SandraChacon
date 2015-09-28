@@ -5,8 +5,8 @@ public class Point {
     private int x, y;
 
     public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
+        this.x = limitar(x);
+        this.y = limitar(y);
     }
 
     public Point(int xy) {
@@ -48,4 +48,14 @@ public class Point {
         this.y = newY;
     }
     
+    public int limitar(int limite){
+    	if (limite < -10){
+    		limite = -10;
+        
+    	}else 
+    	    if (limite > 100){
+    	    	limite = 100;
+    	    }
+    	return limite;
+    }
 }
